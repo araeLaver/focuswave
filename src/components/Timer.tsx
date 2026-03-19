@@ -1,7 +1,6 @@
 'use client';
 import { useTimer } from '@/lib/timer';
 import { MODE_LABELS, TimerMode } from '@/lib/types';
-import AdBanner from '@/components/AdBanner';
 import Link from 'next/link';
 
 function formatTime(seconds: number) {
@@ -90,9 +89,6 @@ export default function Timer() {
           초기화
         </button>
       </div>
-
-      {/* AdSense Banner */}
-      <AdBanner slot="TIMER_BANNER" format="horizontal" className="w-full max-w-sm mb-6" />
 
       <Link href="/stats" className="text-indigo-400 hover:text-indigo-300 text-sm underline">
         통계 보기 →

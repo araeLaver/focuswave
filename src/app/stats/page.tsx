@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { Session } from '@/lib/types';
 import { getSessions, getTodaySessions, getWeeklySessions } from '@/lib/storage';
-import AdBanner from '@/components/AdBanner';
 import Link from 'next/link';
 
 function formatMinutes(seconds: number) {
@@ -97,9 +96,6 @@ export default function StatsPage() {
           ))}
         </div>
       </div>
-
-      {/* AdSense Banner */}
-      <AdBanner slot="STATS_BANNER" format="rectangle" className="mb-8" />
 
       {/* Recent sessions */}
       <div>
